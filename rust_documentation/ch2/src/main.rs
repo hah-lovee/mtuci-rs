@@ -28,7 +28,10 @@ fn main() {
 
             Ordering::Less => println!("Too small"),
             Ordering::Greater => println!("Too big"),
-            Ordering::Equal => println!("so nice!"),
+            Ordering::Equal => {
+                println!("So nice!");
+                break;
+            },
         }
     }
 }
