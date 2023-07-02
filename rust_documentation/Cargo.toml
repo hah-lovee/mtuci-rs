@@ -4,4 +4,5 @@ members = [
     "ch2",
     "ch3/ch3-1",
     "ch3/ch3-2",
+    "ch3/ch3-3",
     ]
