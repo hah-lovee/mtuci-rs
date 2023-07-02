@@ -1,8 +1,7 @@
-fn  main() {
-    let c = 'z';
-    println!("{c}");
-    let z: char = 'ℤ';
-    println!("{z}");
-    let heart_eyed_cat = '😻';
-    println!("{heart_eyed_cat}");
+fn main() {
+    let tup = (500, 6.4, 1);
+
+    let (x, y, z) = tup;
+
+    println!("The value of y is: {y}");
 }
