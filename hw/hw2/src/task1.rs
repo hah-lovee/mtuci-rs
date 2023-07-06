@@ -7,17 +7,33 @@
  */
 
 const SEARCH_TERM: &str = "picture";
-const QUOTE: &str = "Every face, every shop, bedroom window, public-house, and
+const QUOTE: &str = 
+"Every face, every shop, bedroom window, public-house, and
 dark square is a picture feverishly turned--in search of what?
 It is the same with books. What do we seek through millions of pages?";
 
 
 fn main() {
+    // for line in QUOTE.lines(){
+    //     println!("{}", line);
+    //     println!("q");
+    // };
+
     find_term(SEARCH_TERM, QUOTE);
 }
 
 fn find_term(search_term: &str, quote: &str) -> String {
-    todo!()
+    let mut num_line = 1;
+
+    for line in quote.lines() {
+        if line.contains(search_term) {
+            // return num_line.to_string().push_str(": ").push_str(line)
+            return format!("{}: {}", num_line, line.trim());
+
+        };
+        num_line += 1
+    }
+    "".to_string()
 }
 
 
