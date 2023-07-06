@@ -35,7 +35,7 @@ impl Rect {
     }
 
     fn perimeter(&self) -> f32 {
-        self.lenght + self.lenght
+        2*(self.lenght + self.lenght)
     }
 }
 
