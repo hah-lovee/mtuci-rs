@@ -12,7 +12,9 @@ impl Rectangle {
     fn can_hold(&self, rect: &Rectangle) -> bool {
         self.area() > rect.area()
     }
+}
 
+impl Rectangle {
     fn square(size: u32) -> Rectangle {
         Rectangle{
             width: size,
