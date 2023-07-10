@@ -10,9 +10,7 @@ impl Rectangle {
     }
 
     fn can_hold(&self, rect: &Rectangle) -> bool {
-        if self.area() > rect.area() {
-            true
-        } else {false}
+        self.area() > rect.area()
     }
 }
 
