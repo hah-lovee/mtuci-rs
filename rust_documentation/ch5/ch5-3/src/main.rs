@@ -8,6 +8,12 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+
+    fn can_hold(&self, rect: &Rectangle) -> bool {
+        if self.area() > rect.area() {
+            true
+        } else {false}
+    }
 }
 
 fn main() {
@@ -16,8 +22,12 @@ fn main() {
         height: 50,
     };
 
-    println!(
-        "The area of the rectangle is {} square pixels.",
-        rect1.area()
+    let rect2 = Rectangle {
+        width: 20,
+        height: 50,
+    };
+
+    println!("{}",
+        rect1.can_hold(&rect2)
     );
 }
