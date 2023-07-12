@@ -42,6 +42,7 @@ mod back_of_house {
     }
 }
 
+use crate::front_of_house::hosting;
 
 
 fn deliver_order() {}
@@ -54,7 +55,10 @@ pub fn eat_at_restaurant() {
     // println!("I'd like {} toast please", meal.toast);
 
     // // meal.seasonal_fruit = String::from("blueberries");
-    
-    let order1 = back_of_house::Appetizer::Soup;
-    let order2 = back_of_house::Appetizer::Salad;
+
+    hosting::add_to_waitlist();
+
+
+    // let order1 = back_of_house::Appetizer::Soup;
+    // let order2 = back_of_house::Appetizer::Salad;
 }
