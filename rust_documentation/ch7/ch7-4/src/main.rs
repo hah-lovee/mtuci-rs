@@ -1,6 +1,6 @@
 use rand::Rng;
-use std::{cmp::Ordering, io};
-
+use std::{cmp::Ordering, io::{self, Write}};
+// use std::io::{self, Write}
 
 
 fn main() {
