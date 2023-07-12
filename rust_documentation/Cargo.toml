@@ -20,4 +20,10 @@ members = [
     "ch6/ch6-2",
     "ch6/ch6-3",
 
+    "ch7/ch7-1",
+    "ch7/ch7-2",
+    "ch7/ch7-3",
+    "ch7/ch7-4",
+    "ch7/ch7-5",    
+
     ]
