@@ -1,6 +1,7 @@
 use rand::Rng;
 use std::{cmp::Ordering, io::{self, Write}};
 // use std::io::{self, Write}
+use std::collections::*;
 
 
 fn main() {
