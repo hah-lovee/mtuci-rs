@@ -25,4 +25,8 @@ members = [
     "ch7/ch7-5",    
     "ch7/restaurant",
 
+    "ch8/ch8-1",
+    "ch8/ch8-2",
+    "ch8/ch8-3",
+
     ]
