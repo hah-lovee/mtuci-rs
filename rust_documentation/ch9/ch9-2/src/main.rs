@@ -1,10 +1,13 @@
-
-#![allow(unused)]
-fn main() {
-use std::fs;
-use std::io;
-
-fn read_username_from_file() -> Result<String, io::Error> {
-    fs::read_to_string("hello.txt")
+fn last_char_of_first_line(text: &str) -> Option<char> {
+    text.lines().next()?.chars().last()
 }
+
+fn main() {
+    assert_eq!(
+        last_char_of_first_line("Hello, world\nHow are you today?"),
+        Some('d')
+    );
+
+    assert_eq!(last_char_of_first_line(""), None);
+    assert_eq!(last_char_of_first_line("\nhi"), None);
 }
