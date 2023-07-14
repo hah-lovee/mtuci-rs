@@ -1,3 +1,4 @@
 fn main() {
-    let s = String::from("initial contents");
+    let mut s = String::from("foo");
+    s.push_str("bar");
 }
