@@ -1,5 +1,6 @@
 [workspace]
 members = [
-    "hw/hw2"
+    "hw/hw2", 
+    "hw/hw3"
 
 ]
