@@ -27,5 +27,3 @@ impl Summary for Tweet {
         format!("{}: {}", self.username, self.content)
     }
 }
-
-fn main() {}
