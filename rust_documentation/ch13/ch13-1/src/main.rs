@@ -4,6 +4,7 @@ fn main() {
 
     let mut borrows_mutably = || list.push(7);
 
+    println!("{:?}", list);
     borrows_mutably();
     println!("After calling closure: {:?}", list);
 }
